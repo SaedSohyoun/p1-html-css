@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background: no-repeat;
+  font-size: 62.5%;
+  background-image: url(./background.jpeg);
+  background-size: cover;
+  height:100% ;
+
+}
+body {
+  font-family: "Goldman", cursive;
+  background: no-repeat;
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
+}
+.navm{
+  box-sizing: border-box;
+  box-shadow:0em 0em 4em 4em #00a8c7 ;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem 0 4rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav img {
+  width: 5vw;
+}
