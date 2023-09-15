@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2</title>
+</head>
+<body>
+<form action="">
+    <div>
+        <label for="firstname">Voornaam:</label>
+        <input type="text" name="firstname" id="voornaam" pattern="[A-Za-z]+" title="Type geen nummers op uw voornaam A.U.B">
+    </div>
+<br>
+    <div>
+        <label for="surname">Achternaam:</label>
+        <input type="text" name="surname" pattern="[A-Za-z]+" title="Type geen nummers op uw achternaam A.U.B">
+    </div>
+<br>
+    <div>
+        <label for="gender">Man</label>
+        <input type="radio" name="gender" value="Man" checked>
+        <label for="gender">Vrouw</label>
+        <input type="radio" name="gender" value="Vrouw">
+    </div>
+<br>
+    <div>
+        <label for="adres">Straat en huisnummer:</label>
+        <input type="text" name="adres">
+    </div>
+<br>
+    <div>
+        <label for="adres">Postcode:</label>
+        <input type="text" name="zipcode">
+    </div>
+<br>
+    <div>
+        <label for="adres">Stad:</label>
+        <input type="text" name="city">
+    </div>
+<br>
+    <div>
+        <label for="adres">Land:</label>
+        <input type="text" name="country">
+    </div>
+<br>
+    <div>
+        <label for="BSN number">BSN nummer:</label>
+        <input type="text" name="BSN number" pattern="0-9" maxlength="9">
+    </div>
+<br>
+    <div>
+        <label for="Vacation">Vakantie:</label>
+        <select>
+            <option value="">Land Kiezen</option>
+            <option value="Zwitserland">Zwitserland</option>
+            <option value="Spanje">Spanje</option>
+            <option value="Griekland">Griekland</option>
+            <option value="Oostenrijk">Oostenrijk</option>
+            <option value="Brazillie">Brazillie</option>
+            <option value="Egypte">Egypte</option>
+            <option value="Dubai">Dubai</option>
+        </select>
+    </div>
+<br>
+    <div>
+        <label for="date">Vertrek Datum:</label>
+        <input type="date" name="date" min="2023-09-15" title="Kies A.U.B een datum na 15-09-2023"> 
+    </div>
+<br>
+    <div>
+        <label for="date">Terugkomst:</label>
+        <input type="date" name="date"> 
+    </div>
+<br>
+    <div>
+        <label for="number">Aantal Reizigers:</label>
+        <input type="number" name="number" required min="1" max="4"> 
+    </div>
+<br>
+    <div>
+        <input type="submit" value="Boek nu" name="Boek nu">
+    </div>
+<br>
+    <div>
+        <label for="email">Email Adres:</label>
+        <input type="text" name="email"> 
+    </div>
+<br>
+    <div>
+        <label for="password">Wachtwoord:</label>
+        <input type="password" name="password">
+    </div>
+<br>
+
+
+</form>
+    
+</body>
+</html>
