@@ -24,19 +24,37 @@
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
-</body>
+
+<main>
+  <section>
 <header>
   <center><h1>contact</h1></center>
   
 </header>
-<footer>
-  <nav>
+<form class="form-cnt">
     
+    <br>
+    <center><form action="submit" method="post">
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" required></center>
+        <br>
+        <center><label for="email">Email:</label>
+        <input type="email" id="email" name="email" required></center>
+        <br>
+        <center><label for="message">Bericht</label>
+        <textarea id="message" name="message" rows="4" required></textarea></center>
+        <br>
+        <center><input type="submit" value="Versturen"></center>
+</form>
+</section>
+</main>
+
+<footer class="footer">
     <ul>
       <li>Copyright Techniek College Rotterdam</li>
     </ul>
-    </nav>
+     
 </footer>
 
-
+</body>
 </html>

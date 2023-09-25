@@ -1,6 +1,15 @@
+header {
+    width: 100%;
+    min-height: calc(33.33vh);
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+
 h1{
     font-size: 24px;
-    color: blue;
+    color: rgb(255, 0, 0);
     font-weight: bold;
     font-style: italic;
     }
@@ -23,9 +32,22 @@ h1{
     
     .first-p{
         font-weight: bold;
+        color: azure;
     }
 
     a{
         color: #8A2BE2;
         text-decoration: none;
+    }
+
+    img {
+        width: 50vw;
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    article {
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 10px 0;
     }
