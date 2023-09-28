@@ -17,6 +17,7 @@ body {
   color: rgb(0, 0, 0);
   min-height: 100vh;
   position: relative;
+  margin: 0;
 }
 
 nav {
@@ -29,11 +30,14 @@ nav {
   margin: auto;
   background: #00a8c7;
   justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  
 }
-.navm{
-  box-sizing: border-box;
-  box-shadow:0em 0em 4em 4em #00a8c7 ;
-}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -60,8 +64,8 @@ footer{
   flex-wrap: wrap;
   margin: auto;
   background: #00a8c7;
-  justify-content: space-between;
-  
+  justify-content: center;
+  text-align: center;
 }
 
 .background-index{
@@ -87,7 +91,7 @@ footer{
   flex-wrap: wrap;
   margin: auto;
   background: #00a8c7;
-  justify-content: space-between;
+  justify-content: center;
   position: absolute;
   bottom: 0;
 }
@@ -106,5 +110,12 @@ footer{
 .footer{
   position: absolute;
   bottom: 0;
-  
+}
+
+section img{
+  width: 40vw;
+}
+
+.h1-h1{
+  color: white;
 }
