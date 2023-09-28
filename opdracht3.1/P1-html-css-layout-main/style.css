@@ -141,3 +141,23 @@ h2{
 .h2-h2{
   color: white;
 }
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  min-width: 20vw;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: rgb(22, 26, 255);
+  padding: 0.8rem 1rem;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
