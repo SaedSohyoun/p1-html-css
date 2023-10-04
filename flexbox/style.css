@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.itemblue{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    max-width: 1200px;
+}
+
+.itemblack{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    max-width: 1200px;
+}
+
+.itemred{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    max-width: 1200px;
+}
+
+.itemgreen{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    max-width: 1200px;
+}
+
+
+
