@@ -1,32 +1,51 @@
 function optellen() {
-    var getal1 = parseFloat(document.getElementById('getal1').value);
-    var getal2 = parseFloat(document.getElementById('getal2').value);
-    var resultaat = getal1 + getal2;
-    document.getElementById('antwoord').textContent = 'Antwoord: ' + resultaat;
+    let getal1 = parseFloat(document.getElementById('getal1').value);
+    let getal2 = parseFloat(document.getElementById('getal2').value);
+
+    if (getal1 > 0 && getal2 > 0) {
+        let resultaat = getal1 + getal2;
+        document.getElementById('antwoord').textContent = 'Antwoord: ' + resultaat;
+    } else {
+        document.getElementById('antwoord').textContent = 'Het getal is te laag';
+    }
 }
 
 function aftrekken() {
-    var getal1 = parseFloat(document.getElementById('getal1').value);
-    var getal2 = parseFloat(document.getElementById('getal2').value);
-    var resultaat = getal1 - getal2;
-    document.getElementById('antwoord').textContent = 'Antwoord: ' + resultaat;
+    let getal1 = parseFloat(document.getElementById('getal1').value);
+    let getal2 = parseFloat(document.getElementById('getal2').value);
+
+    if (getal1 > 0 && getal2 > 0) {
+        var resultaat = getal1 - getal2;
+        document.getElementById('antwoord').textContent = 'Antwoord: ' + resultaat;
+    } else {
+        document.getElementById('antwoord').textContent = 'Het getal is te laag';
+    }
 }
 
 function vermenigvuldigen() {
-    var getal1 = parseFloat(document.getElementById('getal1').value);
-    var getal2 = parseFloat(document.getElementById('getal2').value);
-    var resultaat = getal1 * getal2;
-    document.getElementById('antwoord').textContent = 'Antwoord: ' + resultaat;
+    let getal1 = parseFloat(document.getElementById('getal1').value);
+    let getal2 = parseFloat(document.getElementById('getal2').value);
+
+    if (getal1 > 0 && getal2 > 0) {
+        let resultaat = getal1 * getal2;
+        document.getElementById('antwoord').textContent = 'Antwoord: ' + resultaat;
+    } else {
+        document.getElementById('antwoord').textContent = 'Het getal is te laag';
+    }
 }
 
 function delen() {
-    var getal1 = parseFloat(document.getElementById('getal1').value);
-    var getal2 = parseFloat(document.getElementById('getal2').value);
-    
-    if (getal2 === 0) {
-        document.getElementById('antwoord').textContent = 'Antwoord: Kan niet delen door 0';
+    let getal1 = parseFloat(document.getElementById('getal1').value);
+    let getal2 = parseFloat(document.getElementById('getal2').value);
+
+    if (getal1 > 0 && getal2 > 0) {
+        if (getal2 !== 0) {
+            let resultaat = getal1 / getal2;
+            document.getElementById('antwoord').textContent = 'Antwoord: ' + resultaat;
+        } else {
+            document.getElementById('antwoord').textContent = 'Kan niet delen door 0';
+        }
     } else {
-        var resultaat = getal1 / getal2;
-        document.getElementById('antwoord').textContent = 'Antwoord: ' + resultaat;
+        document.getElementById('antwoord').textContent = 'Het getal is te laag';
     }
 }
