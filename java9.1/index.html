@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="showCookieWall()">Toon Cookiewall</button>
+
+    <div id="cookieWall" class="modal-overlay">
+        <div class="modal">
+            <h2>Leeftijdsverificatie</h2>
+            <p>Voer uw leeftijd in:</p>
+            <input type="number" id="leeftijdInput" min="0">
+            <button onclick="checkLeeftijd()">Verifiëren</button>
+        </div>
+    </div>
+
+    <div id="teJongBericht" class="red-message">
+        <h2>Helaas, je bent te jong</h2>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
