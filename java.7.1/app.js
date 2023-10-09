@@ -10,3 +10,11 @@ if (budget >= productPrijs) {
     let tekstKleur = "red";
     document.getElementById('output').innerText = boodschap;
 }
+
+let gebruikersInput = prompt("Voer iets in:");
+
+if (gebruikersInput !== null) {
+    alert("Je hebt ingevoerd:" + gebruikersInput);
+} else {
+    alert("Geen invoer ontvangen.");
+}
