@@ -1,5 +1,5 @@
 let budget = 100;
-let productPrijs = 60;
+let productPrijs = prompt();
 
 if (budget >= productPrijs) {
     let boodschap = "U heeft genoeg geld!";
@@ -11,10 +11,10 @@ if (budget >= productPrijs) {
     document.getElementById('output').innerText = boodschap;
 }
 
-let gebruikersInput = prompt("Voer iets in:");
+// let gebruikersInput = prompt("Voer iets in:");
 
-if (gebruikersInput !== null) {
-    alert("Je hebt ingevoerd:" + gebruikersInput);
-} else {
-    alert("Geen invoer ontvangen.");
-}
+// if (gebruikersInput !== null) {
+//     alert("Je hebt ingevoerd:" + gebruikersInput);
+// } else {
+//     alert("Geen invoer ontvangen.");
+// }
